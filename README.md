@@ -5,7 +5,7 @@ Currently it contains the following sorting algorithms:
 
   1.bubbleSort
   
-  2.insertoinSort
+  2.insertionSort
   
   3.mergeSort
   
