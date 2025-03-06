@@ -1,60 +1,83 @@
-# Sorting-Visualizer
-Sorting Visualizer using matplotlib and numpy in python.
+# Sorting Visualizer
 
-Currently it contains the following sorting algorithms:
+A Python-based Sorting Visualizer using `matplotlib` and `numpy`.
 
-  1.bubbleSort
-  
-  2.insertionSort
-  
-  3.mergeSort
-  
-  4.quickSort
-  
+## Supported Sorting Algorithms:
 
-Prerequisites:
+- **Bubble Sort**
+- **Insertion Sort**
+- **Merge Sort**
+- **Quick Sort**
 
-1.Python(https://www.python.org/downloads/)
+---
 
-2.matplotlib(https://matplotlib.org/stable/install/index.html)
+## Prerequisites
 
-3.numPy(https://numpy.org/install/)
+Ensure you have the following installed:
 
+1. [Python](https://www.python.org/downloads/)
+2. [Matplotlib](https://matplotlib.org/stable/install/index.html)
+3. [NumPy](https://numpy.org/install/)
 
+Install missing dependencies using:
+```bash
+pip install matplotlib numpy
+```
 
-About the sorting algorithms:
+---
 
-1.BubbleSort:
+## About the Sorting Algorithms
 
-  In Bubble Sort algorithm,
-  
-  .traverse from left and compare adjacent elements and the higher one is placed at right side.
-  
-  .In this way, the largest element is moved to the rightmost end at first.
-  
-  .This process is then continued to find the second largest and place it and so on until the data is sorted.
-  
+### 1. Bubble Sort
 
-2.InsertionSort:
+Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
-  It works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. 
-  
-  It is a stable sorting algorithm, meaning that elements with equal values maintain their relative order in the sorted output.
-  
+- The algorithm traverses from left to right, comparing adjacent elements and moving the larger one to the right.
+- This process continues, moving the largest element to its correct position at each iteration.
+- The algorithm repeats until all elements are sorted.
 
-3.MergeSort:
+**Time Complexity:**
+- Worst-case: `O(n²)`
+- Average-case: `O(n²)`
+- Best-case (already sorted list): `O(n)`
 
-  Merge sort is a sorting algorithm that follows the divide-and-conquer approach. 
-  
-  It works by recursively dividing the input array into smaller subarrays and sorting those subarrays then merging them back together to obtain the sorted array.
-  
-  In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. 
-  
-  This process is repeated until the entire array is sorted.
-  
+### 2. Insertion Sort
 
-4.QuickSort:
+Insertion Sort builds the sorted array one item at a time by taking an element and inserting it into its correct position.
 
-  QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot
-  and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
-  
+- It maintains a sorted and an unsorted portion.
+- Elements from the unsorted portion are picked and placed in the correct position in the sorted portion.
+- It is a stable sorting algorithm, meaning elements with equal values retain their relative order.
+
+**Time Complexity:**
+- Worst-case: `O(n²)`
+- Average-case: `O(n²)`
+- Best-case (already sorted list): `O(n)`
+
+### 3. Merge Sort
+
+Merge Sort follows the **divide-and-conquer** approach to sorting.
+
+- The array is recursively divided into two halves.
+- Each half is sorted individually.
+- The sorted halves are merged back together.
+- This process repeats until the entire array is sorted.
+
+**Time Complexity:**
+- Worst-case: `O(n log n)`
+- Average-case: `O(n log n)`
+- Best-case: `O(n log n)`
+
+### 4. Quick Sort
+
+QuickSort is another **divide-and-conquer** sorting algorithm that selects a **pivot** element and partitions the array around it.
+
+- It picks an element as a pivot and partitions the array into two halves: elements less than the pivot and elements greater than the pivot.
+- The process is repeated recursively for each partition until the array is fully sorted.
+
+**Time Complexity:**
+- Worst-case: `O(n²)` (when the pivot is the smallest or largest element)
+- Average-case: `O(n log n)`
+- Best-case: `O(n log n)`
+
+---
